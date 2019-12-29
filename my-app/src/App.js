@@ -7,9 +7,7 @@ import rootReducer from './store/reducer';
 import Root from './components/Root';
 import {
   Route,
-  Switch,
-  Redirect,
-  withRouter
+  Switch
 } from "react-router-dom";
 import FavouriteContainer from './components/favourContainer';
 import InfoContainer from './components/infoContainer'
