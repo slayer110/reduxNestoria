@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0 !important;
+}
+
+html,
+body {
+    height: 100%;
+    text-align: center;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+h1 {
+    font-size: 58px;
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+
+#header {
+    text-align: center;
+}
+
+
+.container {
+    flex: 1 0 auto;
+}
+
+#search input {
+    display: inline-block;
+    width: 80%;
+    height: 40px;
+    font-size: 18px;
+    margin-top: 161px;
+    border-radius: 10px;
+    border: 2px solid #fc0;
+}
+
+#buttonSearch {
+    border-radius: 10px;
+    display: inline-block;
+    position: relative;
+    font-size: 20px;
+    width: 100px;
+    height: 40px;
+    background-color: #fc0;
+    color: black;
+    cursor: pointer;
+    vertical-align: bottom;
+    right: 100px;
+    bottom: 2px;
+}
+
+#buttonSearch span {
+    position: absolute;
+    top: 4px;
+    right: 21px;
+}
+
+
+img {
+    margin-top: 23px;
+    margin-left: 4px;
+}
+
+.close img {
+    position: absolute;
+    cursor: pointer;
+    right: 3px;
+    width: 29px;
+    height: 29px;
+    top: -20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.star {
+    position: relative;
+    top: 0;
+    right: 57px;
+    cursor: pointer;
+}
+
+.imagesFavourite {
+    float: left;
+}
+
+.footer {
+    color: blue;
+}
+
+.imgInfo {
+    width: 300px;
+    height: 200px;
+}
+
+.left {
+    width: 50%;
+    height: 800px;
+    overflow: auto;
+    float: left;
+}
+
+.right {
+    width: 50%;
+    height: 800px;
+    overflow: auto;
+    text-align: left;
+}
+
+li {
+    margin-bottom: 35px;
+    font-size: 20px;
+    color: blue;
+    text-align: left;
+}
+
+span {
+    color: black
+}
+
+#hrefFavourite {
+    color: blue;
+    text-decoration: underline;
+    display: inline-block;
+    position: absolute;
+    right: 73px;
+    top: 66px;
+    font-size: 18px;
+}
+
+.imgCloseFav {
+    display: inline-block;
+    position: relative;
+    top: -247px;
+    right: 62px;
+}
+
+.favour {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.pictures {
+    display: inline-block;
+}
+
+.footer span {
+    cursor: pointer;
+    font-size: 18px;
+    color: blue;
+    font-weight: bold;
+}
+
+.right h2 {
+    display: inline-block;
+}
+
+ul {
+    margin-top: 10px;
+}
