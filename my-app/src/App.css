@@ -114,18 +114,14 @@ img {
     width: 50%;
     height: 800px;
     overflow: auto;
-}
-
-ul {
-    /*width: 300px;*/
-    /*margin-top: 40px;*/
-    /*vertical-align: top;*/
+    text-align: left;
 }
 
 li {
     margin-bottom: 35px;
     font-size: 20px;
     color: blue;
+    text-align: left;
 }
 
 span {
@@ -154,10 +150,6 @@ span {
     display: inline-block;
 }
 
-h2 {
-    text-align: center;
-}
-
 .pictures {
     display: inline-block;
 }
@@ -167,4 +159,12 @@ h2 {
     font-size: 18px;
     color: blue;
     font-weight: bold;
+}
+
+.right h2 {
+    display: inline-block;
+}
+
+ul {
+    margin-top: 10px;
 }
