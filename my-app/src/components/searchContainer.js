@@ -7,8 +7,10 @@ import {picturesFetch} from "../store/pictures/action";
 
 class SearchContainer extends React.Component {
   render() {
-    return <Search search={this.props.searchInput} changeSearch={this.props.changeSearch}
-                   picturesFetch={this.props.picturesFetch} arrPictures={this.props.arrPictures}/>
+    return <Search search={this.props.searchInput}
+                   changeSearch={this.props.changeSearch}
+                   picturesFetch={this.props.picturesFetch}
+                   arrPictures={this.props.arrPictures}/>
   }
 }
 

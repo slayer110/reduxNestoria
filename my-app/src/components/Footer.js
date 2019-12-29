@@ -8,8 +8,8 @@ class Footer extends React.Component {
   };
   render() {
     return (
-      <div className="Footer">
-        {this.props.pictures.length?<a onClick={this.nextPictures}>Further</a>:''}
+      <div className="footer">
+        {this.props.pictures.length?<span onClick={this.nextPictures}>Further</span>:''}
       </div>
     )
   }

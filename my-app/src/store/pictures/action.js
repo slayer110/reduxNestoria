@@ -1,5 +1,6 @@
 export const PICTURE_DATA_SUCCESS = 'PICTURE_DATA_SUCCESS';
-export const ADD_FAVOURITE = 'PICTURE_DATA_SUCCESS';
+export const ADD_FAVOURITE = 'ADD_FAVOURITE';
+export const DELETE_FAVOURITE = 'DELETE_FAVOURITE';
 
 export function picturesDataSuccess(data, numberRange) {
   return {
@@ -21,3 +22,16 @@ export function picturesFetch(numberRange, fieldSearch) {
   }
 }
 
+export function addFavourite(listerUrl) {
+  return {
+    type: ADD_FAVOURITE,
+    payload: listerUrl
+  }
+}
+
+export function deleteFavourite(listerUrl) {
+  return {
+    type: DELETE_FAVOURITE,
+    payload: listerUrl
+  }
+}
