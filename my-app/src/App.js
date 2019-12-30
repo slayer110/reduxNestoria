@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import FavouriteContainer from './components/favourContainer';
 import InfoContainer from './components/infoContainer'
+import Error from './components/Error'
 
 const store = createStore(rootReducer, applyMiddleware(thunk));
 
@@ -23,6 +24,7 @@ class App extends React.Component {
           <Route exact path='/' component={Root}/>
           <Route exact path='/favourite' component={FavouriteContainer}/>
           <Route path='/details/:id' component={InfoContainer}/>
+          <Route path='*' component={Error}/>
         </Switch>
       </Provider>
     )

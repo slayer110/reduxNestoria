@@ -1,6 +1,4 @@
 import React from 'react';
-// import '../App.css';
-// import close from './images/close.png';
 import FavouritePicture from './favoritePicture';
 
 class Favourite extends React.Component {
