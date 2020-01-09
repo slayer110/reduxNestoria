@@ -9,11 +9,14 @@ class Picture extends React.Component {
     this.props.addFavourite(lister)
   };
 
+  getId() {
+    return this.props.listerUrl.split('/')[4];
+  }
+
   render() {
-    let id = this.props.listerUrl.split('/')[4];
     return (
       <div className="pictures">
-        <Link to={`/details/${id}`}>
+        <Link to={`/details/${this.getId()}`}>
           <img src={this.props.image}/>
         </Link>
         <img className="star"

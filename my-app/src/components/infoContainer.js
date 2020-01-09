@@ -5,13 +5,12 @@ import Info from './Info'
 
 class InfoContainer extends React.Component {
 
-  takeData() {
-    let arrId = this.props.arrInfo.map((elem) => elem.lister_url.split('/')[4]);
-    return this.props.arrInfo[arrId.indexOf(this.props.match.params.id)]
+  getData() {
+    return this.props.arrInfo.find((elem) => this.props.match.params.id === elem.lister_url.split('/')[4])
   }
 
   render() {
-    const {img_url, bathroom_number, room_number, price, title} = this.takeData();
+    const {img_url, bathroom_number, room_number, price, title} = this.getData();
     return <Info image={img_url}
                  bathroomNumber={bathroom_number}
                  roomNumber={room_number}
