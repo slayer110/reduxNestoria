@@ -7,8 +7,10 @@ import {picturesFetch} from "../store/pictures/action";
 class FooterContainer extends React.Component {
   render() {
     return (
-      <Footer pictures={this.props.arrPictures} picturesRange={this.props.picturesFetch}
-              rangeNumber={this.props.rangeNumber} searchInput={this.props.searchInput}/>
+      <Footer pictures={this.props.arrPictures}
+              picturesRange={this.props.picturesFetch}
+              rangeNumber={this.props.rangeNumber}
+              searchInput={this.props.searchInput}/>
     )
   }
 }

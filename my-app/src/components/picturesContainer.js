@@ -9,7 +9,9 @@ class PicturesContainer extends React.Component {
     let arrPicture;
     if (this.props.list) {
       arrPicture = this.props.list.map((elem, index) => {
-        return <Picture key={index} listerUrl={elem.lister_url} image={elem.img_url} star={elem.star}
+        return <Picture key={index}
+                        listerUrl={elem.lister_url}
+                        image={elem.img_url} star={elem.star}
                         addFavourite={this.props.addFavourite}/>
       })
     } else {

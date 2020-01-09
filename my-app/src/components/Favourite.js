@@ -5,7 +5,9 @@ class Favourite extends React.Component {
   actionFavour() {
     let arrFavour;
     return arrFavour = this.props.arrFavourite.map((elem, index) => {
-      return <FavouritePicture key={index} image={elem.img_url} listerUrl={elem.lister_url}
+      return <FavouritePicture key={index}
+                               image={elem.img_url}
+                               listerUrl={elem.lister_url}
                                deleteFavourite={this.props.delete}/>
     });
   }

@@ -11,7 +11,9 @@ class FavouritePicture extends React.Component {
   render() {
     return (<div className="favour">
       <a href={this.props.listerUrl}><img src={this.props.image}/></a>
-      <img className="imgCloseFav" src={close} onClick={this.deletePicture.bind(null, this.props.listerUrl)}/>
+      <img className="imgCloseFav"
+           src={close}
+           onClick={this.deletePicture.bind(null, this.props.listerUrl)}/>
     </div>)
   }
 }

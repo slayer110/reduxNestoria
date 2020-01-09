@@ -16,7 +16,8 @@ class Picture extends React.Component {
         <Link to={`/details/${id}`}>
           <img src={this.props.image}/>
         </Link>
-        <img className="star" src={this.props.star ? active : noActive}
+        <img className="star"
+             src={this.props.star ? active : noActive}
              onClick={this.changeStarFavourite.bind(null, this.props.listerUrl)}/>
       </div>
     )
