@@ -5,7 +5,7 @@ import Picture from './Picture';
 import {addFavourite} from "../store/pictures/action";
 
 class PicturesContainer extends React.Component {
-  render() {
+  viewPictures() {
     let arrPicture;
     if (this.props.list) {
       arrPicture = this.props.list.map((elem, index) => {
@@ -17,9 +17,13 @@ class PicturesContainer extends React.Component {
     } else {
       arrPicture = '';
     }
+    return arrPicture;
+  }
+
+  render() {
     return (
       <div id="pictures">
-        {arrPicture}
+        {this.viewPictures()}
       </div>
     )
   }
