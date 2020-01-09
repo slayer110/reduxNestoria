@@ -23,14 +23,14 @@ class PicturesContainer extends React.Component {
   }
 }
 
-const putStateToProps = (state) => {
+const mapState = (state) => {
   return {
     list: state.dataPictures.listPictures
   }
 };
 
-const putActionsToProps = {
+const mapDispatch = {
   addFavourite
 };
 
-export default connect(putStateToProps, putActionsToProps)(PicturesContainer);
+export default connect(mapState, mapDispatch)(PicturesContainer);

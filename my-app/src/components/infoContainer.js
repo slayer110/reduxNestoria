@@ -20,9 +20,9 @@ class InfoContainer extends React.Component {
   }
 }
 
-const putStateToProps = (state) => {
+const mapState = (state) => {
   return {
     arrInfo: state.dataPictures.listPictures
   }
 };
-export default connect(putStateToProps)(InfoContainer);
+export default connect(mapState)(InfoContainer);

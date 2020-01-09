@@ -12,13 +12,13 @@ class FavouriteContainer extends React.Component {
   }
 }
 
-const putStateToProps = state => {
+const mapState = state => {
   return {
     arrFavourite: state.dataPictures.arrFavourite
   }
 };
 
-const putActionsToProps = {
+const mapDispatch = {
   deleteFavourite
 };
-export default connect(putStateToProps, putActionsToProps)(FavouriteContainer)
+export default connect(mapState, mapDispatch)(FavouriteContainer)

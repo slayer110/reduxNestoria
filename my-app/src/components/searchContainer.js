@@ -14,15 +14,15 @@ class SearchContainer extends React.Component {
   }
 }
 
-const putStateToProps = state => {
+const mapState = state => {
   return {
     searchInput: state.search.text,
     arrPictures: state.dataPictures.listPictures,
   }
 };
 
-const putActionsToProps = {
+const mapDispatch = {
   changeSearch,
   picturesFetch
 };
-export default connect(putStateToProps, putActionsToProps)(SearchContainer)
+export default connect(mapState, mapDispatch)(SearchContainer)

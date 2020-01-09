@@ -7,20 +7,21 @@ import {picturesFetch} from "../store/pictures/action";
 class FooterContainer extends React.Component {
   render() {
     return (
-      <Footer pictures={this.props.arrPictures} picturesRange={this.props.picturesFetch} rangeNumber={this.props.rangeNumber} searchInput={this.props.searchInput}/>
+      <Footer pictures={this.props.arrPictures} picturesRange={this.props.picturesFetch}
+              rangeNumber={this.props.rangeNumber} searchInput={this.props.searchInput}/>
     )
   }
 }
 
-const putStateToProps=(state)=>{
-  return{
-    arrPictures:state.dataPictures.listPictures,
+const mapState = (state) => {
+  return {
+    arrPictures: state.dataPictures.listPictures,
     rangeNumber: state.dataPictures.countForMore,
-    searchInput:state.search.text
+    searchInput: state.search.text
   }
 };
 
-const putActionsToProps={
+const mapDispatch = {
   picturesFetch
 };
-export default connect(putStateToProps,putActionsToProps)(FooterContainer);
+export default connect(mapState, mapDispatch)(FooterContainer);
