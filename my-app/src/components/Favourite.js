@@ -15,7 +15,6 @@ class Favourite extends React.Component {
       <div>
         <div>
           <h1>Favourites</h1>
-          {/*<div className="close" onClick={this.onVisible}><img src={close}/></div>*/}
           <div id="boxForFavourite">
             {this.actionFavour()}
           </div>
