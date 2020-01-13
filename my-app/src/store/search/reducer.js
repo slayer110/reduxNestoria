@@ -7,7 +7,6 @@ const defaultState = {
 const searchReducer = (state = defaultState, action) => {
   switch (action.type) {
     case CHANGE_SEARCH_FIELD:
-      sessionStorage.setItem('searchText', action.payload);
       return {
         text: action.payload
       }

@@ -1,8 +1,9 @@
-export const CHANGE_SEARCH_FIELD='CHANGE_SEARCH_FIELD';
+export const CHANGE_SEARCH_FIELD = 'CHANGE_SEARCH_FIELD';
 
-export const changeSearch=(value)=>{
-  return{
-    type:CHANGE_SEARCH_FIELD,
-    payload:value
+export const changeSearch = (value) => {
+  sessionStorage.setItem('searchText', value);
+  return {
+    type: CHANGE_SEARCH_FIELD,
+    payload: value
   }
 };

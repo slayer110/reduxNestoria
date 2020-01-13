@@ -10,7 +10,9 @@ class FooterContainer extends React.Component {
       <Footer pictures={this.props.arrPictures}
               picturesRange={this.props.picturesFetch}
               rangeNumber={this.props.rangeNumber}
-              searchInput={this.props.searchInput}/>
+              searchInput={this.props.searchInput}
+              arrFavour={this.props.arrFavourite}
+      />
     )
   }
 }
@@ -19,7 +21,8 @@ const mapState = (state) => {
   return {
     arrPictures: state.dataPictures.listPictures,
     rangeNumber: state.dataPictures.countForMore,
-    searchInput: state.search.text
+    searchInput: state.search.text,
+    arrFavourite: state.dataPictures.arrFavourite
   }
 };
 

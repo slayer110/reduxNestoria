@@ -4,7 +4,8 @@ import '../App.css';
 class Footer extends React.Component {
 
   nextPictures = () => {
-    this.props.picturesRange(this.props.rangeNumber + 1, this.props.searchInput)
+    console.log(this.props.pictures)
+    this.props.picturesRange(this.props.rangeNumber + 1, this.props.searchInput, this.props.arrFavour, this.props.pictures)
   };
 
   render() {

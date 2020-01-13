@@ -7,16 +7,17 @@ import {deleteFavourite} from "../store/pictures/action";
 class FavouriteContainer extends React.Component {
 
   render() {
-    return <Favourite visible={this.props.visible}
-                      visibleFunction={this.props.visibleFavourite}
-                      arrFavourite={this.props.arrFavourite}
-                      delete={this.props.deleteFavourite}/>
+    return <Favourite arrFavourite={this.props.arrFavourite}
+                      delete={this.props.deleteFavourite}
+                      list={this.props.arrPictures}
+    />
   }
 }
 
 const mapState = state => {
   return {
-    arrFavourite: state.dataPictures.arrFavourite
+    arrFavourite: state.dataPictures.arrFavourite,
+    arrPictures: state.dataPictures.listPictures,
   }
 };
 

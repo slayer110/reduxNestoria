@@ -7,7 +7,7 @@ class Search extends React.Component {
   };
   onClickSearch=()=>{
     let firstRange=1;
-    this.props.picturesFetch(firstRange,this.props.search)
+    this.props.picturesFetch(firstRange,this.props.search,this.props.arrFavourite)
   };
 
   render() {

@@ -4,8 +4,8 @@ import close from './images/close.png';
 
 
 class FavouritePicture extends React.Component {
-  deletePicture = (lister) => {
-    this.props.deleteFavourite(lister)
+  deletePicture = (lister, arrFavour, list) => {
+    this.props.deleteFavourite(lister, arrFavour, list)
   };
 
   render() {
@@ -13,7 +13,7 @@ class FavouritePicture extends React.Component {
       <a href={this.props.listerUrl}><img src={this.props.image}/></a>
       <img className="imgCloseFav"
            src={close}
-           onClick={this.deletePicture.bind(null, this.props.listerUrl)}/>
+           onClick={this.deletePicture.bind(null, this.props.listerUrl, this.props.arrFavourite, this.props.list)}/>
     </div>)
   }
 }
